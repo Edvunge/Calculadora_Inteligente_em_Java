@@ -11,18 +11,18 @@ A ideia deste exercicio é criar uma calculadora com todas estas funçoes.
 3. Multiplicação
 4. Divisão
 5. Módulo de um número
-6. Tabuada
-7. Fatorial de um número
-8. Sucessor & antecessor
-9. Números primos
-10. Contagem crescente de 1 a 100
-11. Contagem decrescente 100 & 1
-12. Raiz quadrada de um número
-13. Resolver eq.1 e 2 graus
-14. Potência de um número
-15. Exponencial de um número
-16. Radiciação
-17. Par ou ímpar
+6. Sucessor & antecessor
+7. Resolver eq.1 e 2 graus
+8. Potência de um número
+9. Raiz quadrada de um número
+10. Par ou ímpar
+11. Números primos
+12. Tabuada
+13. Fatorial de um número
+14. Contagem crescente de 1 a 100
+15. Contagem decrescente 100 & 1
+16. Exponencial de um número
+17. Radiciação
 18. ..
 19. ..
 20. ..
