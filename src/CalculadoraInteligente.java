@@ -41,18 +41,18 @@ Calculadora inteligente
         int numberTwo = input.nextInt();
 
         int soma = numberOne + numberTwo;
-        int sub = numberOne - numberTwo;
-        int mult = numberOne * numberTwo;
-        int div = numberOne / numberTwo;
+        int subtraccao = numberOne - numberTwo;
+        int multiplicacao = numberOne * numberTwo;
+        int divisao = numberOne / numberTwo;
 
         if (numeroOperacao == 1){
             System.out.printf("a soma entre %s e %s é =  %s " , numberOne , numberTwo ,soma);
         } else if (numeroOperacao == 2){
-            System.out.printf("a subtracção entre %s e %s é =  %s " , numberOne , numberTwo ,sub);
+            System.out.printf("a subtracção entre %s e %s é =  %s " , numberOne , numberTwo ,subtraccao);
         } else if (numeroOperacao == 3){
-            System.out.printf("a multiplicação entre %s e %s é =  %s " , numberOne , numberTwo ,mult);
+            System.out.printf("a multiplicação entre %s e %s é =  %s " , numberOne , numberTwo ,multiplicacao);
         } else if (numeroOperacao == 4){
-            System.out.printf("a divisão entre %s e %s é =  %s " , numberOne , numberTwo ,div);
+            System.out.printf("a divisão entre %s e %s é =  %s " , numberOne , numberTwo ,divisao);
         } else {
             System.out.println("numero invalido, !!ESTA OPERAÇÃO NÃO EXISTE!!!");
         }
