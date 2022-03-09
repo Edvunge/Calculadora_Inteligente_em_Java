@@ -22,8 +22,6 @@ public class Teste {
                 System.out.println("nao sei nada!");
         }
 */
-
-
         input.close();
     }
 }

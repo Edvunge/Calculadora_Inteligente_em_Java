@@ -33,7 +33,7 @@ Calculadora inteligente
         int segundoNumero = input.nextInt();
 
         System.out.println(" Digite qual a operação que deseja: adicao, subtracao, multiplicacao , divisao e o modulo.");
-        System.out.println(" Digite qual a operação que deseja: sucessor , antecessor.");
+        System.out.println(" Digite qual a operação que deseja: sucessor , antecessor, equacao1");
         final String Opercao = input.next();
 
         int soma = primeiroNumero + segundoNumero;
@@ -94,6 +94,15 @@ Calculadora inteligente
                     default:
                         System.out.println("DESCULPA! mas este texto é invalido.");
                 }
+                break;
+            case "equacao1":
+
+                    System.out.println("Equação do 1° grau é toda equação que pode ser expressa na forma ax+b=0, com ‘a’ diferente de zero ");
+
+                    int valorDeXis = (  - ( segundoNumero / primeiroNumero) );
+
+                    System.out.println("o resultado do calculo da equação do primeiro grau é: " + valorDeXis);
+
                 break;
             default:
                 System.out.println("numero invalido, !!ESTA OPERAÇÃO NÃO EXISTE!!!");
