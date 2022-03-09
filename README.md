@@ -11,8 +11,8 @@ A ideia deste exercicio é criar uma calculadora com todas estas funçoes.
 3. Multiplicação (feito)
 4. Divisão (feito)
 5. Módulo de um número (feito)
-6. Sucessor & antecessor
-7. Resolver eq.1 e 2 graus
+6. Sucessor & antecessor (feito)
+7. Resolver eq.1 e 2 graus (fazendo...)
 8. Potência de um número
 9. Raiz quadrada de um número
 10. Par ou ímpar

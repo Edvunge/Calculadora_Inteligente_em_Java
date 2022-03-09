@@ -8,7 +8,6 @@ public class CalculadoraInteligente {
 Exercício de Java
 Calculadora inteligente
 
-6. Sucessor & antecessor
 7. Resolver eq.1 e 2 graus
 8. Potência de um número
 9. Raiz quadrada de um número
@@ -42,10 +41,6 @@ Calculadora inteligente
         int multiplicacao = primeiroNumero * segundoNumero;
         int divisao = primeiroNumero / segundoNumero;
         double modulo =  primeiroNumero % segundoNumero;
-
-        int sucessorUm = primeiroNumero + 1;
-        int antecessorDois = segundoNumero - 1;
-        int sucessorDois = segundoNumero + 1;
 
         switch (Opercao.toLowerCase()){
             case "adicao":
@@ -81,6 +76,7 @@ Calculadora inteligente
                                     System.out.println("DESCULPA! mas este texto é invalido.");
                             }
                 break;
+
             case "sucessor":
 
                 System.out.println("Quer saber o sucessor do primeiro numero? ou segundo?");
