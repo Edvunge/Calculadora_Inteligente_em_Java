@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class CalculadoraInteligente {
@@ -32,29 +33,34 @@ Calculadora inteligente
         Scanner input = new Scanner(System.in);
 
         System.out.println("indique um numero inteiro?");
-        int numberOne = input.nextInt();
+        int primeiroNumero = input.nextInt();
 
-        System.out.println("o número 1 será adição, o 2 subtração, o 3 multiplicação e o 4 divisão.");
-        int numeroOperacao = input.nextInt();
+        System.out.println(" Digite qual a operação que deseja: adicao, subtracao, multiplicacao e o divisao.");
+        final String Opercao = input.next();
 
         System.out.println("indique um outro numero inteiro?");
-        int numberTwo = input.nextInt();
+        int segundoNumero = input.nextInt();
 
-        int soma = numberOne + numberTwo;
-        int subtraccao = numberOne - numberTwo;
-        int multiplicacao = numberOne * numberTwo;
-        int divisao = numberOne / numberTwo;
+        int soma = primeiroNumero + segundoNumero;
+        int subtraccao = primeiroNumero - segundoNumero;
+        int multiplicacao = primeiroNumero * segundoNumero;
+        int divisao = primeiroNumero / segundoNumero;
 
-        if (numeroOperacao == 1){
-            System.out.printf("a soma entre %s e %s é =  %s " , numberOne , numberTwo ,soma);
-        } else if (numeroOperacao == 2){
-            System.out.printf("a subtracção entre %s e %s é =  %s " , numberOne , numberTwo ,subtraccao);
-        } else if (numeroOperacao == 3){
-            System.out.printf("a multiplicação entre %s e %s é =  %s " , numberOne , numberTwo ,multiplicacao);
-        } else if (numeroOperacao == 4){
-            System.out.printf("a divisão entre %s e %s é =  %s " , numberOne , numberTwo ,divisao);
-        } else {
-            System.out.println("numero invalido, !!ESTA OPERAÇÃO NÃO EXISTE!!!");
+        switch (Opercao.toLowerCase()){
+            case "adicao":
+                System.out.printf("a soma entre %s + %s é =  %s " , primeiroNumero , segundoNumero ,soma);
+                break;
+            case "subtraccao":
+                System.out.printf("a soma entre %s - %s é =  %s " , primeiroNumero , segundoNumero ,subtraccao);
+                break;
+            case "multiplicacao":
+                System.out.printf("a soma entre %s * %s é =  %s " , primeiroNumero , segundoNumero ,multiplicacao);
+                break;
+            case "divisao":
+                System.out.printf("a soma entre %s / %s é =  %s " , primeiroNumero , segundoNumero ,divisao);
+                break;
+            default:
+                System.out.println("numero invalido, !!ESTA OPERAÇÃO NÃO EXISTE!!!");
         }
 
         input.close();
