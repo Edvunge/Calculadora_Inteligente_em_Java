@@ -8,11 +8,6 @@ public class CalculadoraInteligente {
 Exercício de Java
 Calculadora inteligente
 
-1. Adição
-2. Subtração
-3. Multiplicação
-4. Divisão
-5. Módulo de um número
 6. Sucessor & antecessor
 7. Resolver eq.1 e 2 graus
 8. Potência de um número
@@ -35,16 +30,22 @@ Calculadora inteligente
         System.out.println("indique um numero inteiro?");
         int primeiroNumero = input.nextInt();
 
-        System.out.println(" Digite qual a operação que deseja: adicao, subtracao, multiplicacao e o divisao.");
-        final String Opercao = input.next();
-
         System.out.println("indique um outro numero inteiro?");
         int segundoNumero = input.nextInt();
+
+        System.out.println(" Digite qual a operação que deseja: adicao, subtracao, multiplicacao , divisao e o modulo.");
+        System.out.println(" Digite qual a operação que deseja: sucessor , antecessor.");
+        final String Opercao = input.next();
 
         int soma = primeiroNumero + segundoNumero;
         int subtraccao = primeiroNumero - segundoNumero;
         int multiplicacao = primeiroNumero * segundoNumero;
         int divisao = primeiroNumero / segundoNumero;
+        double modulo =  primeiroNumero % segundoNumero;
+
+        int sucessorUm = primeiroNumero + 1;
+        int antecessorDois = segundoNumero - 1;
+        int sucessorDois = segundoNumero + 1;
 
         switch (Opercao.toLowerCase()){
             case "adicao":
@@ -58,6 +59,45 @@ Calculadora inteligente
                 break;
             case "divisao":
                 System.out.printf("a soma entre %s / %s é =  %s " , primeiroNumero , segundoNumero ,divisao);
+                break;
+            case "modulo":
+                System.out.printf("a soma entre %s %% %s é =  %s " , primeiroNumero , segundoNumero ,modulo);
+                break;
+            case "antecessor":
+
+                        System.out.println("Quer saber o antecessor do primeiro numero? ou segundo?");
+                        String antecessor = input.next();
+
+                            switch (antecessor.toLowerCase()) {
+                                case "primeiro":
+                                    int antecessorPrimeiroNumero = primeiroNumero - 1;
+                                    System.out.printf("o seu antecessor do %s é: %s ", primeiroNumero , antecessorPrimeiroNumero);
+                                    break;
+                                case "segundo":
+                                    int antecessorSegundoNumero = segundoNumero - 1;
+                                    System.out.printf("o seu antecessor do %s é: %s ", segundoNumero , antecessorSegundoNumero);
+                                    break;
+                                default:
+                                    System.out.println("DESCULPA! mas este texto é invalido.");
+                            }
+                break;
+            case "sucessor":
+
+                System.out.println("Quer saber o sucessor do primeiro numero? ou segundo?");
+                String sucessor = input.next();
+
+                switch (sucessor.toLowerCase()) {
+                    case "primeiro":
+                        int sucessorPrimeiroNumero = primeiroNumero + 1;
+                        System.out.printf("o seu sucessor do %s é: %s ", primeiroNumero , sucessorPrimeiroNumero);
+                        break;
+                    case "segundo":
+                        int sucessorSegundoNumero = segundoNumero + 1;
+                        System.out.printf("o seu sucessor do %s é: %s ", segundoNumero , sucessorSegundoNumero);
+                        break;
+                    default:
+                        System.out.println("DESCULPA! mas este texto é invalido.");
+                }
                 break;
             default:
                 System.out.println("numero invalido, !!ESTA OPERAÇÃO NÃO EXISTE!!!");

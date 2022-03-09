@@ -6,11 +6,11 @@ A ideia deste exercicio é criar uma calculadora com todas estas funçoes.
 
 <h3>Calculadora inteligente</h3>
 
-1. Adição
-2. Subtração
-3. Multiplicação
-4. Divisão
-5. Módulo de um número
+1. Adição (feito)
+2. Subtração (feito)
+3. Multiplicação (feito)
+4. Divisão (feito)
+5. Módulo de um número (feito)
 6. Sucessor & antecessor
 7. Resolver eq.1 e 2 graus
 8. Potência de um número
