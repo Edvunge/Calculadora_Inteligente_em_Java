@@ -33,7 +33,7 @@ Calculadora inteligente
         int segundoNumero = input.nextInt();
 
         System.out.println(" Digite qual a operação que deseja: adicao, subtracao, multiplicacao , divisao e o modulo.");
-        System.out.println(" Digite qual a operação que deseja: sucessor , antecessor, equacao1");
+        System.out.println(" Digite qual a operação que deseja: sucessor , antecessor, equacao1, equacao2 ");
         final String Opercao = input.next();
 
         int soma = primeiroNumero + segundoNumero;
@@ -102,6 +102,37 @@ Calculadora inteligente
                     int valorDeXis = (  - ( segundoNumero / primeiroNumero) );
 
                     System.out.println("o resultado do calculo da equação do primeiro grau é: " + valorDeXis);
+
+                break;
+            case "equacao2":
+
+                System.out.println("Equação do 2° grau é toda equação que pode ser expressa na forma ax+b=0, com ‘a’ diferente de zero ");
+
+                System.out.println("indique o terceiro numero inteiro?");
+                int terceiroNumero = input.nextInt();
+
+                /*
+                 Se o valor encontrado para delta for negativo,
+                 não precisa fazer mais nenhum cálculo e a resposta será que a equação não possui raízes reais.
+
+                 Caso o valor do delta seja igual ou maior que zero,
+                 devemos substituir todas as letras pelos seus valores na fórmula de Bhaskara e calcular as raízes.
+                */
+
+                // Fórmula de DELTA
+                int formulaDeDelta = ( ( segundoNumero * segundoNumero ) - ( (4) * (primeiroNumero) * (terceiroNumero) ) );
+
+                if (formulaDeDelta >= 0 ) {
+
+                    // Fórmula de Bhaskara
+                    double xisUm = ( ( ( - segundoNumero ) + Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
+                    double xisDois = ( ( ( - segundoNumero ) - Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
+
+                    System.out.printf(" Assim, as raízes da equação %s x2 %s x %s = 0 são x1 = %s e x2 = %s " , primeiroNumero , segundoNumero , terceiroNumero ,xisUm ,xisDois );
+
+                } else {
+                    System.out.println(" a equação não possui raízes reais ");
+                }
 
                 break;
             default:
