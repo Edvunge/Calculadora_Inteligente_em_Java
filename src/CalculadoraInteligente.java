@@ -8,7 +8,6 @@ public class CalculadoraInteligente {
 Exercício de Java
 Calculadora inteligente
 
-7. Resolver eq.1 e 2 graus
 8. Potência de um número
 9. Raiz quadrada de um número
 10. Par ou ímpar
@@ -108,7 +107,7 @@ Calculadora inteligente
 
                 System.out.println("Equação do 2° grau é toda equação que pode ser expressa na forma ax+b=0, com ‘a’ diferente de zero ");
 
-                System.out.println("indique o terceiro numero inteiro?");
+                System.out.printf(" %n indique o terceiro numero inteiro?");
                 int terceiroNumero = input.nextInt();
 
                 /*
@@ -122,16 +121,19 @@ Calculadora inteligente
                 // Fórmula de DELTA
                 int formulaDeDelta = ( ( segundoNumero * segundoNumero ) - ( (4) * (primeiroNumero) * (terceiroNumero) ) );
 
-                if (formulaDeDelta >= 0 ) {
+                if(primeiroNumero!=0){
 
-                    // Fórmula de Bhaskara
-                    double xisUm = ( ( ( - segundoNumero ) + Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
-                    double xisDois = ( ( ( - segundoNumero ) - Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
+                    if (formulaDeDelta >= 0 ) {
 
-                    System.out.printf(" Assim, as raízes da equação %s x2 %s x %s = 0 são x1 = %s e x2 = %s " , primeiroNumero , segundoNumero , terceiroNumero ,xisUm ,xisDois );
+                        // Fórmula de Bhaskara
+                        double xisUm = ( ( ( - segundoNumero ) + Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
+                        double xisDois = ( ( ( - segundoNumero ) - Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
 
-                } else {
-                    System.out.println(" a equação não possui raízes reais ");
+                        System.out.printf(" Assim, as raízes da equação %s x2 %s x %s = 0 são x1 = %s e x2 = %s " , primeiroNumero , segundoNumero , terceiroNumero ,xisUm ,xisDois );
+
+                    }
+                    else
+                        System.out.println(" a equação não possui raízes reais ");
                 }
 
                 break;

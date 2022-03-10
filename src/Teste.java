@@ -51,20 +51,22 @@ public class Teste {
         // Fórmula de DELTA
         int formulaDeDelta = ( ( segundoNumero * segundoNumero ) - ( (4) * (primeiroNumero) * (terceiroNumero) ) );
 
-        if (formulaDeDelta >= 0 ) {
-
-            // Fórmula de Bhaskara
-            double xisUm = ( ( ( - segundoNumero ) + Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
-            double xisDois = ( ( ( - segundoNumero ) - Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
-
-            System.out.printf(" Assim, as raízes da equação %s x2 %s x %s = 0 são x1 = %s e x2 = %s " , primeiroNumero , segundoNumero , terceiroNumero ,xisUm ,xisDois );
 
 
-        } else {
+        if(primeiroNumero!=0){
+
+            if (formulaDeDelta >= 0 ) {
+
+                // Fórmula de Bhaskara
+                double xisUm = ( ( ( - segundoNumero ) + Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
+                double xisDois = ( ( ( - segundoNumero ) - Math.sqrt(formulaDeDelta) ) / ( (2) * (primeiroNumero) ) );
+
+                System.out.printf(" Assim, as raízes da equação %s x2 %s x %s = 0 são x1 = %s e x2 = %s " , primeiroNumero , segundoNumero , terceiroNumero ,xisUm ,xisDois );
+
+            }
+        else
             System.out.println(" a equação não possui raízes reais ");
-        }
-
-
+    }
 
 
         input.close();
